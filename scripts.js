@@ -1,18 +1,18 @@
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml3');
+var textWrapper = document.querySelector('m16 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml3 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 2250,
-    delay: (el, i) => 150 * (i+1)
-  }).add({
-    targets: '.ml3',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+anime.timeline.timeline({loop:true})
+    .add({
+        targets: '.m16 .letter',
+        translateY: ["1.1em", 0],
+        tanslateZ: 0,
+        duration: 750,
+        delay: (el, i) => 50 * i
+    }) .add({
+        targets: '.m16', 
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });

@@ -27,8 +27,23 @@ header {
   margin-top: 20px;
 }
 
-header h1 {
+.ml6 {
+  position: relative;
   font-size: 50px;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 header img {
