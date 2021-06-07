@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="">
+      <meta name="keywords" content="keyword 1, keyword 2, keyword 3"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="WebDevCronin"/>
+      <link rel="stylesheet" href="styles.css">
+      
+    </head>
+      <body>
+        <nav>
+          <header id="title">
+            <h1>Level Up with JavaScript</h1>
+          </header>
+              <ul>
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#Section 1">Section 1</a></li>
+                <li><a href="#Section 2">Section 2</a></li>
+                <li><a href="#Section 3">Section 3</a></li>
+                <li><a href="#Section 4">Section 4</a></li>
+                <li><a href="#Section 5">Section 5</a></li>
+                <li><a href="#Section 6">Section 6</a></li>
+                <li><a href="#Section 7">Section 8</a></li>
+                <li><a href="#Section 9">Section 9</a></li>
+                <li><a href="#More Information">More Information</a></li>
+                <li><a href="#Contact">Contact </a></li>
+              </ul>
+            </nav>
+          <main id="main-doc">
+                <section id="Introduction">
+                  <header id= "top">
+                    <h1>Level Up with JavaScript</h1>
+                      <button onClick="rotateImg()">
+                       <img src="./assets/js.png" class="spinner"></img>
+                      </button>
+                  </header>
+                    <p> Hello and welcome to my JavaScript tutorial "Level up with JavaScript". <br>
+                      In this tutorial you will be introduced to some of the basic JavaScript programming concepts.<br> 
+                      The content outine in this tutorial directly follows that of FreeCodeCamp.org.<br>
+                      To get started, here is an example of a basic JavaScript program called "Hello World".<br>
+                    </p>
+                      <code
+                        >function greetMe(yourName) { alert("Hello " + yourName); }
+                         greetMe("World");
+                      </code>
+                        <p>If you would like to try this out for yourself, click the link below and follow the instructions.</p><br>
+                          <a href="https://slicker.me/JavaScript/tutorial.htm">How to write "Hello world" in JavaScript</a>
+                            <p>Now that you have seen what JavaScript is and an example of how to write a simple program, lets level up!</p>
+                  <section id="Section 1">
+                    <header>
+                      <h3>Comments, Declaring Variables, Storing, Assigning, and Initializing Values</h3>
+                    </header>
+                        <h3>Comments</h3>
+                          <p>
+                            Comments are the notes about your code and describes what it does <br>
+                            JavaScript will ignore everything after "//"" for in-line and /*the is for multiline
+                          </p>
+                            <code>
+                              // This is an in-line comment.<br>
+                               /* This is a <br>
+                                 multi-line comment */
+                            </code>
+                        <h3>Declaring Variables</h3>
+                          <p>
+                            Variables allow computers to store and use data. JavaScript uses these eight data types: undefined, null, boolean, string, symbol, bigint, number,and object.<br>
+                            These variables must be declared by the "var" keyword and we always end our JavaScript statments with semicolons ";".<br>
+                            Variables can have numbers, letters, $, or _ . They cannot contain spaces or start with numbers. 
+                          </p>
+                            <code>
+                              var level;
+                            </code>
+                        <h3>Storing Values</h3>
+                          <p>
+                            Values can be stored as a varible with the assignment operator (=). In this example I declare the variable "level" and set in to the value "1".<br>
+                            Now each time "level" appears in the code, the program will treat it as "1".    
+                          </p>
+                            <code>
+                              var level;<br>
+                              level = 1;  
+                            </code>
+                        <h3>Assigning Values</h3>
+                          <p>
+                            Next the assignment operator can be used to assign the same value from the previous variable to another variable. With the below example, now JavaScript_level and level are both the same value of 1.   
+                          </p>
+                            <code>
+                              var level;<br>
+                              level = 1; <br>
+                              var JavaScript_level;<br> 
+                              JavaScript_level = level;<br>
+                            </code> 
+                        <h3>Initializing Values</h3>
+                          <p>
+                            Initialize allows us to assign an initial value to a variable as it is declared.
+                          </p>
+                            <code>
+                              var level = 1;
+                            </code>                                           
+                  </section>
+                  <section id="Section 2">
+                    <header>
+                      <h3>Uninitialized Variables, Case Sensitive Variables, Adding Two Numbers, Subtracting Numbers, Multiplying Two Numbers</h3>
+                    </header>
+                        <h3>Uninitialized Variables</h3>
+                          <p>
+                            When a variable is not set to a value, it is defaulted as "undefined". Not a number(NaN) will be your output if you do not assign a value and try to do a math operation. 
+                          </p>
+                            <code>
+                               var level;
+                               alert ( level === undefined )
+                            </code>
+                        <h3>Case Sensitive Variables</h3>
+                          <p>
+                            In JavaScript case senitivity matters. "LEVEL" is not the same as "level". Best practice is to use all lower case in single word variables.<br>
+                            In multi-word variables use lower case for the first word, and capitalize the first letter of any subsequent words. This is called camelCase.
+                          </p>
+                            <code>
+                              var levelUp;
+                              var levelUpYourSkills;
+                            </code>
+                        <h3>Adding Two Numbers</h3>
+                          <p>
+                            Adding numbers is just as easy as using a (+) between numbers. the result will show as // assigned (number)
+                          </p>
+                            <code>
+                              level = 1+1; // assigned 2
+                            </code> 
+                        <h3>Subtracting Numbers</h3>
+                          <p>
+                             The same applies with subtraction, but indtead you use (-).
+                          </p>
+                            <code>
+                              hitPointsTotal = 10 - 1; // assigned 9
+                           </code>
+                        <h3>Multiplying Two Numbers</h3>
+                          <p>
+                            When multiplying nubers we use the (*) operator
+                          </p>
+                            <code>
+                              damage = 6 * 6; // assigned 36
+                            </code> 
+                  </section>
+                  <section id="Section 3">
+                    <header>
+                      <h3>Dividing Numbers, Increments, Decrements, Multiplying Decimals, and Dividing Decimals</h3>
+                    </header>
+                    <h3>Dividing Numbers</h3>
+                    <p>
+                      The operator for dividing numbers is the (/) symbol.
+                    </p>
+                      <code>
+                        experiencePerCharacter = 100 / 5; // assigned 20
+                      </code>
+                  <h3>Increments</h3>
+                    <p>
+                      Increments are used to simply add one to a variable. To do this we use the (++) operator.
+                    </p>
+                      <code>
+                        greatAxe++; (is the same as) greatAxe = greatAxe + 1;
+                      </code>
+                  <h3>Decrements</h3>
+                    <p>
+                      Like increments, decrements are used to instead subtract one from a variable . This is fone using the (--) operator.
+                    </p>
+                      <code>
+                        strength--; (is the same as) strength = strength - 1;
+                      </code> 
+                  <h3>Multiplying Decimals</h3>
+                    <p>
+                       In JavaScript decimal numbers can also be stored in variables. they are often referred to as floating point numbers aka floats. Keep in mind that these numbers will not be exact and will possibly lead to rounding or accuracy errors.<br>
+                       Decimals can also be multiplied with the (*) operator as well.
+                    </p>
+                      <code>
+                        Var experiencePerEnemy = 10.5 * 10; // assigned 105
+                     </code>
+                  <h3>Dividing Decimals</h3>
+                    <p>
+                      The same applies to dividing decimals.
+                    </p>
+                      <code>
+                        var experiencePerCharacter = 10.8 / 2; // assigned 5.4
+                      </code> 
+                  </section>
+                  <section id="Section 4">
+                    <header>
+                      <h3>Finding Remainder, Compound Assignment Augmented Addition, C.A.A Subtraction, C.A.A Multiplication, and C.A.A Division</h3>
+                    </header>
+                  <h3>Finding Remainder</h3>
+                    <p>
+                      When dividing numbers that do not divide as a whole number, the remainder operator (%) can be used to find how much remains after the the division.
+                    </p>
+                      <code>
+                       var remainder = 13 % 2;
+                        var remainder = 1;
+                      </code>
+                  <h3>Compound Assignment Augmented Addition</h3>
+                    <p>
+                      Compounded assignment uses the (+=) operator to do the mathmatical operation and then assignment in one step. The mathmatical operation to the right of the equal sign is always performed first and follows the order of operations.
+                    </p>
+                      <code>
+                         var spellDamage = 10
+                          spellDamage += 5
+                           console.log(spellDamge); // this will return 15
+                      </code> 
+                  <h3>Compound Assignment Augmented Subtraction</h3>
+                    <p>
+                       Compounded assignments can also be used with augmented subtraction using the (-=) operator.
+                    </p>
+                      <code>
+                         var hitPoints = 20;
+                          hitPoints -= 5
+                           consol.log(hitPoints); // this wil return 15
+                     </code>
+                  <h3>Compound Assignment Augmented Multiplication</h3>
+                    <p>
+                      By using the (*=) operator we can use compunded assignment for augmented multiplication.
+                    </p>
+                      <code>
+                        var criticalHit = 2
+                         criticalHit *= 10
+                          console.log(criticalHit); // this will return 20
+                      </code> 
+                  <h3>Compound Assignment Augmented Division</h3>
+                    <p>
+                       By using the (/=) operator we can use compounded assignment for augmented division.
+                    </p>
+                      <code>
+                         var moveSpeed = 30 
+                          moveSpeed /= 2
+                           console.log(moveSpeed); // the will return 15
+                      </code>
+                  </section>
+                  <section id="Section 5">
+                    <header>
+                      <h3>Declare String Variables, Escaping Literal Quotes in Strings, Quoting Strings with Single Quotes, Escape Sequences in Strings, and Concatenating Strings with Plus Operator</h3>
+                    </header>
+                  <h3>Declare String Variables</h3>
+                    <p>
+                      A string variable is when zero or more characters are enclosed in quotes.
+                    </p>
+                      <code>
+                        var character = "Tempest Cleric"
+                      </code>
+                  <h3>Escaping Literal Quotes in Strings</h3>
+                    <p>
+                       Escaping literal quotes are used when you need to use quotes inside of the quotes of the declared string. This is done using a backslash before both of the actual quotations.
+                    </p>
+                      <code>
+                        var magicAxe = "Greataxe \"of the Brute\""; (When printed this would look like; Greataxe "of the Brute")
+                      </code> 
+                  <h3>Quoting Strings with Single Quotes</h3>
+                    <p>
+                      When quoting, single quotes or double quotes may be used. If this is done however, care needs to be taken to avoid ending the string with a none paired single quotation character.
+                      Again the backslash can be used before the quotation character to escape it and prevent the error.
+                    </p>
+                      <code>
+                        errorString = 'The barkeep looked over and asked, "who's responsible for this barbarian?".'
+                        correctString = 'The paladin replied, "must be that rouge\'s over there".'
+                     </code>
+                  <h3>Escape Sequences in Strings</h3>
+                    <p>
+                      Other than to escape quotes, there are also some special characters that we need to use the backslash to escape. When we do this make sure not to add any spaces between escape sequences or words.<br> 
+                      Below is a list of some of these possible characters;
+                    </p>
+                      <ul>
+                         <li> \'	single quote</li>
+                         <li> \"	double quote</li>
+                         <li> \\	backslash</li>
+                         <li> \n	newline</li>
+                         <li> \r	carriage return</li>
+                         <li> \t	tab</li>
+                         <li> \b	word boundary</li>
+                         <li> \f	form feed</li>
+                      </ul>
+                      <code>
+                         var character = "Druid\n\tLevel\One" // This would appear as <br>
+                           Druid<br>
+                              Level One
+                      </code> 
+                  <h3>Concatenating Strings with Plus Operator</h3>
+                    <p>
+                      Concanating strings uses the (+) concanating operator to add strings together. This is used to build a new string. There will be no spaces unless specifically added.
+                    </p>
+                      <code>
+                       var character = "Moon " + "Druid"; // The new string would look like this; Moon Druid 
+                      </code> 
+                  </section>
+                  <section id="Section 6">
+                    <header>
+                      <h3>Concatenating Strings with Plus Equals Operator, Constructing Strings with Variables, Appending Variables to Strings, Find the Length of a String, Use Bracket Notation to Find the First Character in a String</h3>
+                    </header>
+                    <h3>Concatenating Strings with Plus Equals Operator</h3>
+                    <p>
+                       As we did with the compounded assignment (+=) operator before, now we will use it to concatenate a string on an existing variable. Again spaces only exist if we add them.
+                    </p>
+                      <code>
+                        var iroh = "dragon, ";
+                          dragon += "of the west."; // iroh would now be "dragon, of the west"
+                      </code>
+                  <h3>Constructing Strings with Variables</h3>
+                    <p>
+                      In JavaScript it is common to build longer, more complex strings. To do this we will be using the concatenation operator (+) to insert one or more variables to construct the string. 
+                    </p>
+                      <code>
+                        var mySpell = "magic missile";
+                          spellDescription = "I cast the spell " + mySpell + ", and three glowing darts home in on my target."; // spellDescription will now be "I cast the spell magic missile, and three glowing darts home in on my target."
+                      </code>
+                  <h3>Appending Variables to Strings</h3>
+                    <p>
+                      Variables can also be appended to strings using the (+=) operator.
+                    </p>
+                      <code>
+                        var alignmentTwo = "good" 
+                          var alignment = "chaotic"
+                            alignment += alignmentTwo; // aligment is now "chaotic good"
+                      </code> 
+                  <h3>Find the Length of a String</h3>
+                    <p>
+                       To find the length of a string we use (.length) after the string but before the end (;). Length is given in the number of characters. It can be used on string variables or string literals. 
+                    </p>
+                      <code> 
+                        Example one;
+
+                          "Tabletop game".length; // length would be 13
+                        Example two;
+
+                          var game = "Dungeons and Dragons"
+                            var gameLength = game.length; // now gameLength is equal to 20
+                     </code>
+                  <h3>Use Bracket Notation to Find the First Character in a String</h3>
+                    <p>
+                      In JavaScript counting starts at 0, and is referred to as Zero-based indexing. By using bracket notation ([]) we can get any character at a specific index in a string. 
+                    </p>
+                      <code>
+                        var character = "Wizard";
+                          var firstLetter = character[0]; // the firstLetter is "W", also class[1] would have been "i" etc.
+                      </code> 
+                  </section>
+                  <section id="Section 7">
+                    <header>
+                      <h3>String Immuntability, Use Bracket Notation to Find the Nth Character in a String, Use Bracket Notation to Find the Last Character in a String, Use Bracket Notation to Find the Nth-to-Last Character in a String</h3>
+                    </header>
+                    <h3>Understand String Immuntability</h3>
+                    <p>
+                      Immutable means a string cannot be altered once assigned. They way we make changes to strings is to assign with a new string.  
+                    </p>
+                      <code>
+                         var name = "Lizard";
+                          name[0] = "W"; // The is is an example of the wrong way
+
+                          var name = "Lizard";
+                            name = "Wizard"; // This a correct example that reassigns "Lizard" and makes it "Wizard"
+                      </code>
+                  <h3>Use Bracket Notation to Find the Nth Character in a String</h3>
+                    <p>
+                      If we want to find which character of a string is sitting at a particular value, we again use bracket notation with the number position we want to find [Nth].
+                    </p>
+                      <code>
+                        var character = "Druid";
+                         var fourthLetterOfDruid = character[3]; // fourthLetterOfDruid is "i"
+                      </code>
+                  <h3>Use Bracket Notation to Find the Last Character in a String</h3>
+                    <p>
+                      When we want to find the last character of a string, we can subtract one from the string's length. 
+                    </p>
+                      <code>
+                        var spell = "Fireball"
+                          spell[spell.length - 1]; // the last letter will be "l"
+                     </code>
+                  <h3>Use Bracket Notation to Find the Nth-to-Last Character in a String</h3>
+                    <p>
+                      Just as we did before to find the Nth and the last character in a string, we can combine the two to find the last to Nth character.
+                    </p>
+                      <code>
+                        var enemy = "Goblin Mage";
+                         var secondToLastLetter = enemy[enemy.length - 2]; // the second to last letter is "g"
+                      </code> 
+                  </section>
+                  <section id="Section 8">
+                    <header>
+                      <h3>Store Multiple Values in One Variable Using JavaScript Arrays, Nest One Array Within Another Array, Access Array Data With Indexes, Modify Array Data</h3>
+                    </header>
+                  <h3>Store Multiple Values in One Variable Using JavaScript Arrays</h3>
+                    <p>
+                       Multiple values can be stored together by enclosing them with brakets []. these can be any combinatiion of strings and/or numbers.
+                    </p>
+                      <code>
+                        var array = ["Natural", 20]
+                      </code>
+                  <h3>Nest One Array Within Another Array</h3>
+                    <p>
+                      Nesting arrays within other ray is also possible by using brackets inside of brackets. T his is referred to  as multi-dimensional arrays.
+                    </p>
+                      <code>
+                        var multiDimensionalArray = [["Hit points", 30], ["Damage Taken", 15]];
+                      </code> 
+                  <h3>Access Array Data With Indexes</h3>
+                    <p>
+                       Indexes are how we access data inside arrays. They use the same bracket notion as strings but instead are specifiing an entry in an array. Arrays use Zero-based indexing (starts the count from zero) just like strings.
+                    </p>
+                      <code>
+                        var diceArray = [2,5,6,4,1,1];
+                          diceArray[3]; // this index would be 4
+                     </code>
+                  <h3>Modify Array Data</h3>
+                    <p>
+                      As we learned before, strings can not be changed. The entries of arrays are able to be changed however, and this is referred to as mutable. 
+                    </p>
+                      <code>
+                        var diceArray = [2,10,8,7];
+                          diceArray[0] = 4; // now the 2 in our array will be 4
+                      </code> 
+                  </section>
+                  <section id="Section 9">
+                    <header>
+                      <h3>Access Multi-Dimensional Arrays With Indexes, Manipulate Arrays With Push(), Manipulate Arrays with Pop(), Manipulate Arrays With Shift(), Manipulate Arrays With Unshift()</h3>
+                    </header>
+                    <h3>Access Multi-Dimensional Arrays With Indexes</h3>
+                    <p>
+                      Multi-dimensional arrays can be refered to as an array of arrays. Each set of brackets is a level where the outermost set of brackets are the first level. 
+                    </p>
+                      <code>
+                        var diceArray = [
+                        [18,5,1],
+                        [6,10,20],
+                        [2,7,15],
+                        [[4,6,3], 19, 9]
+                        ];
+                        diceArray[0]; // this is [15,5,1]
+                        diceArray[3]; // this is [[4,6,3], 19, 9]
+                        diceArray[3][0][2]; // this would equal 3
+                      </code>
+                  <h3>Manipulate Arrays With Push()</h3>
+                    <p>
+                      Push (.push()) is used to move one or more data parameters to the end of an array.
+                    </p>
+                      <code>
+                         var diceRoll = ["Roll D6", 4,5,2,6]
+                         diceRoll.push(1,5) // diceRoll would now be ["Roll D6", 4,5,2,6,1,5]
+                      </code>
+                  <h3>Manipulate Arrays with Pop()</h3>
+                    <p>
+                       There is another way data can be changed in an array and this is with the .pop() function. Using .pop() removes the last element from an array and returns it.
+                    </p>
+                      <code>
+                         var moonBeam = [8,5,10];
+                         var firstEnemy = moonBeam.pop()
+                         cosole.log(firstEnemy); // this will return 10
+                         console.log(moonBeam); // this will now return [8,5]
+                      </code> 
+                  <h3>Manipulate Arrays With shift()</h3>
+                    <p>
+                       If we want to manipulate the first element instead of the last, we instead use the .shift() function. 
+                    </p>
+                      <code>
+                        var partyComposition = [["Druid", 8 ], ["Fighter", 10], ["Paladin, 10"]]
+                        var splitParty = partyComposition.shift()
+                        console.log(splitParty); // splitParty will now equal ["Druid", 8 ]
+                        console.log(partyComposition); // partyComposition will now equal ["Fighter", 10], ["Paladin, 10"]
+                     </code>
+                  <h3>Manipulate Arrays With Unshift()</h3>
+                    <p>
+                       As we learned before with .push() to add an element to the end of an array, .unshift() can be used to add an element to the beginning of an array.
+                    </p>
+                      <code>
+                        var inventory = ["cloak", "magic ring", "long sword"]
+                        inventory.shift(); // inventory now equals ["magic ring", "long sword"]
+                        inventory.unshift("health potion"); // now inventory equals ["health potion", "magic ring", "long sword"]
+                      </code> 
+                  </section>
+              
+                <footer id="Contact">
+                  <p>Wait! Although this is the end of my Level Up JavaScript tutorial, this is only the beginging of your journey. To continue your quest, and for more information please check out:<br>
+                  <a href="https://www.freecodecamp.org/">Free Code Camp</a>
+                  </p>
+                    <p>If you would like to see my source code please check out my <a href="https://github.com/ZCroninDev">GitHub</a><br>
+                      If you would like to follow me on social media, please see me on <a href="https://twitter.com/ZcroninDev">Twitter</a>
+                    </p>
+                </footer>
+            </main>
+      </body>
+    </html>
+       
