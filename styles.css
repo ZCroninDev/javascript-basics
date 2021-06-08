@@ -121,20 +121,22 @@ li a {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
   font-size:20px;
-
+  color:rgb(0, 0, 0);
 }
 
 li a:hover {
-  background-color: rgb(124, 129, 133);
+  background-color: rgb(187, 221, 248);
 }
 
 p {
   font-size:20px;
 }
+
 code {
-  font-size:16px;
+  font-size:18px;
   font-style:italic;
 }
+
 #contact { 
 margin-top: 40px;
 margin-bottom: 5px;
