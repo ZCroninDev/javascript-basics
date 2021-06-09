@@ -29,7 +29,7 @@ header {
 
 .ml6 {
   position: relative;
-  font-size: 42px;
+  font-size: 50px;
 }
 
 .ml6 .text-wrapper {
@@ -169,7 +169,9 @@ background-color: rgb(122 236 255);
     padding-left: 5%;
   }
 
- 
+  .ml6 {
+    font-size: 36px;
+  }
 
   #contact {
     padding-right: 5%;
