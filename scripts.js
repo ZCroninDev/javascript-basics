@@ -9,9 +9,4 @@ anime.timeline({loop: false})
     translateZ: 0,
     duration: 1500,
     delay: (el, i) => 50 * i
-  }).add({
-    targets: '.ml6',
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
   });
