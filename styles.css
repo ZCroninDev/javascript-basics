@@ -35,10 +35,9 @@ header {
 .ml6 .text-wrapper {
   position: relative;
   display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
   overflow: hidden;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .ml6 .letter {
@@ -53,8 +52,8 @@ header img {
 .spinner {
   width: 132px;
   height: 150px;
-  -webkit-animation: sk-rotateplane 6s ease-in-out;
-  animation: sk-rotateplane 6s  ease-in-out;
+  -webkit-animation: sk-rotateplane 2s ease-in-out;
+  animation: sk-rotateplane 2s  ease-in-out;
 }
 
 button {
