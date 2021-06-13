@@ -10,3 +10,14 @@ anime.timeline({loop: false})
     duration: 1500,
     delay: (el, i) => 50 * i
   });
+
+
+  function open_nav() {
+    document.getElementsByTagName("nav").style.display = "inherit";
+  }
+
+  function close_nav() {
+     document.getElementsByTagName("nav").style.display = "none";
+  }
+
+  

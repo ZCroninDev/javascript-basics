@@ -27,6 +27,18 @@ header {
   margin-top: 20px;
 }
 
+#nav-open {
+  float:left;
+  padding: 50px 50px;
+  font-size: 40px;
+}
+
+#nav-close {
+  float:left;
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
 .ml6 {
   position: relative;
   font-size: 50px;
