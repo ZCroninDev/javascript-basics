@@ -29,14 +29,27 @@ header {
 
 #nav-open {
   float:left;
-  padding: 50px 50px;
+  padding: 0px 10px;
   font-size: 40px;
+  background-color: lightgray;
+  border: 2px solid rgb(37, 41, 41);
+  border-radius: 5px;
+}
+
+#nav-open:hover {
+  background-color: darkgray;
 }
 
 #nav-close {
-  float:left;
-  padding: 10px 10px;
-  font-size: 20px;
+  text-align:center;
+  padding: 0px 10px;
+  font-size: 40px;
+  background-color: lightgray;
+  border-bottom: 2px solid rgb(37, 41, 41);
+}
+
+#nav-close:hover {
+  background-color: darkgray;
 }
 
 .ml6 {
