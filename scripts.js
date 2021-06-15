@@ -12,12 +12,19 @@ anime.timeline({loop: false})
   });
 
 
-  function open_nav() {
-    document.getElementsByTagName("nav").style.display = "inherit";
-  }
+  // function open_nav() {
+  //   document.getElementById("nav-open").style.display = "block";
+  // }
 
-  function close_nav() {
-     document.getElementsByTagName("nav").style.display = "none";
+  // function close_nav() {
+  //    document.getElementById("nav-close").style.display = "none";
+  // }
+ 
+  function myFunction() {
+  var x = document.getElementById("nav-open");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
-
-  
+  }
