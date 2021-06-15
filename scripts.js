@@ -11,27 +11,8 @@ anime.timeline({loop: false})
     delay: (el, i) => 50 * i
   });
 
-
-  // function open_nav() {
-  //   document.getElementById("nav-open").style.display = "block";
-  // }
-
-  // function close_nav() {
-  //    document.getElementById("nav-close").style.display = "none";
-  // }
- 
-  // function myFunction() {
-  // var x = document.getElementsByClassName("open-close");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
-  // }
-
-
-function myFunction() {
-  var x = document.getElementById("myDIV");
+function navToggle() {
+  var x = document.getElementById("myNav");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
