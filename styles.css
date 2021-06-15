@@ -9,14 +9,13 @@ main {
   text-align: center;
   line-height:1.5;
   border: 0px;
-  padding-left: 320px;
   margin-right: 1%;
   margin-left: 1%;
-  width: 75%;
+  width: 100%;
 }
 
 #top {
-  margin-top: 1px;
+  margin-top: 0px;
 }
 
 header {
@@ -24,37 +23,28 @@ header {
   font-size:24px;
   border: 2px solid rgb(37, 41, 41);
   border-radius: 5px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
-#nav-open {
+.header-button {
   float:left;
   padding: 0px 10px;
-  font-size: 40px;
+  font-size: 30px;
   background-color: lightgray;
   border: 2px solid rgb(37, 41, 41);
   border-radius: 5px;
+  width: 25px;
+  height:45px;
 }
 
-#nav-open:hover {
-  background-color: darkgray;
-}
-
-#nav-close {
-  text-align:center;
-  padding: 0px 10px;
-  font-size: 40px;
-  background-color: lightgray;
-  border-bottom: 2px solid rgb(37, 41, 41);
-}
-
-#nav-close:hover {
+.header-button:hover {
   background-color: darkgray;
 }
 
 .ml6 {
   position: relative;
   font-size: 50px;
+  padding-top: 50px;
 }
 
 .ml6 .text-wrapper {
@@ -123,21 +113,24 @@ nav #title {
 nav {
   position:fixed;
   max-width: 300px;
-  display:flex;
-  flex-direction:column;
+  display:none;
+  margin-left: 1%;
   background-color: rgb(122 236 255);
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
+
 ul {
   list-style-type:none;
   margin:0;
   padding:0;
 }
+
 li {
   font-size:14px;
   text-align:center; 
 }
+
 li a {
   display:block;
   padding: 10px;
@@ -177,11 +170,9 @@ background-color: rgb(122 236 255);
   display: none;
   }
 
-  main {
-  padding-left: 0px;
-  margin-left:0px;
-  width: 100%;
-  }
+  /* main {
+
+  } */
 
   h3 {
     padding-right: 5%;

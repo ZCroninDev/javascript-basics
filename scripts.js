@@ -20,11 +20,21 @@ anime.timeline({loop: false})
   //    document.getElementById("nav-close").style.display = "none";
   // }
  
-  function myFunction() {
-  var x = document.getElementById("nav-open");
+  // function myFunction() {
+  // var x = document.getElementsByClassName("open-close");
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+  // }
+
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-  }
+}
