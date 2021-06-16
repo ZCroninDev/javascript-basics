@@ -111,6 +111,7 @@ nav #title {
 
 nav {
   position:fixed;
+  z-index: 1;
   max-width: 300px;
   display:none;
   margin-left: 1%;
